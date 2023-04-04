@@ -1,15 +1,42 @@
 import React from 'react';
-import { getPostData } from '../../lib/posts-utils';
+import { getAllPosts, getPostData, getPostsFiles } from '../../lib/posts-utils';
 import PostContent from './post-detail/post-content';
-
-const PostDetailPage = () => {
-	return <PostContent />;
+import Head from 'next/head';
+const PostDetailPage = (props) => {
+	return (
+		<>
+			<Head>
+				<title>{props.post.title}</title>
+				<meta name="description" content={props.post.excerpt} />
+			</Head>
+			<PostContent post={props.post} />
+		</>
+	);
 };
 
-export const getStaticProps = (context) => {
+export function getStaticProps(context) {
 	const { params } = context;
 	const { slug } = params;
-	getPostData(slug);
-};
+
+	const postData = getPostData(slug);
+
+	return {
+		props: {
+			post: postData,
+		},
+		revalidate: 600,
+	};
+}
+
+export function getStaticPaths() {
+	const postFilenames = getPostsFiles();
+
+	const slugs = postFilenames.map((fileName) => fileName.replace(/\.md$/, ''));
+
+	return {
+		paths: slugs.map((slug) => ({ params: { slug: slug } })),
+		fallback: false,
+	};
+}
 
 export default PostDetailPage;
