@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import classes from './post-header.module.css';
 const PostHeader = ({ title, image }) => {
-	console.log(image);
+	
 	return (
 		<header className={classes.header}>
 			<h1>{title}</h1>

@@ -1,7 +1,7 @@
 ---
 title: 'An Introduction to HTTP Protocol'
 date: '2023-04-04'
-image: http-protocol-intro.png
+image: http-protocol-intro.jpg
 excerpt: HTTP is the foundation of data communication on the World Wide Web. Learn about the basics of HTTP, including its methods, headers, and status codes.
 isFeatured: true
 ---
