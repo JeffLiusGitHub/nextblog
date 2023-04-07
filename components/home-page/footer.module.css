@@ -1,0 +1,32 @@
+.footer {
+	background-color: #46514e;
+	color: var(--color-grey-200);
+	padding: var(--size-8) 0;
+}
+
+.footer .content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 60rem;
+	margin: 0 auto;
+}
+.link>li {
+	list-style: none;
+}
+
+.footer p {
+	font-size: var(--size-6);
+	margin: 0;
+}
+
+.footer a {
+	color: var(--color-grey-300);
+	text-decoration: none;
+	margin-left: var(--size-4);
+}
+
+.footer a:hover {
+	color: var(--color-grey-200);
+}

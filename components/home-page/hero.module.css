@@ -1,11 +1,11 @@
 .hero {
-	text-align: center;
 	background-image: linear-gradient(
 		to bottom,
 		var(--color-grey-900),
 		var(--color-grey-800)
 	);
 	padding: var(--size-8) 0;
+	display: flex;
 }
 
 .image {
@@ -16,6 +16,9 @@
 	overflow: hidden;
 	background-color: var(--color-grey-700);
 	margin: auto;
+}
+.content {
+	padding: 100px;
 }
 
 .image img {
@@ -36,5 +39,15 @@
 	color: var(--color-grey-200);
 	width: 90%;
 	max-width: 40rem;
-	margin: auto;
+	
 }
+@media only screen and (max-width: 767px) {
+	.hero {
+	  flex-direction: column-reverse;
+	  align-items: center;
+	}
+	
+	.image {
+	  margin-bottom: var(--size-8);
+	}
+  }

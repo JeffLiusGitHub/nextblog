@@ -1,7 +1,7 @@
 .post {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-	background-color: var(--color-grey-800);
-	text-align: center;
+	background-color: #344e41;
+	text-align: left;
 	padding: 20px;
 	box-shadow: 8px 13px 23px 1px rgba(57, 51, 82, 0.47);
 	-webkit-box-shadow: 8px 13px 23px 1px rgba(57, 51, 82, 0.47);
@@ -25,6 +25,7 @@
 
 .image img {
 	object-fit: contain;
+	filter: blur(2px) opacity(90%);
 }
 
 .content {
@@ -38,6 +39,7 @@
 
 .content time {
 	font-style: italic;
+	text-align: left;
 	color: var(--color-grey-300);
 }
 
