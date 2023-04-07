@@ -7,10 +7,10 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 const PostContent = (props) => {
 	const { post } = props;
-	const imagePath = `/images/posts/${post.slug}/${post.image}`;
+	// console.log(post);
+	const imagePath = `/images/posts/${post?.slug}/${post.image}`;
+	console.log(imagePath);
 
-	// /images/posts/getting-started-with-nextjs/getting-started-with-nextjs.png
-	// /images/posts/getting-started-with-nextjs/getting-started-nextjs.png
 	const customRenderers = {
 		// img(image) {
 		// 	return (
@@ -29,7 +29,7 @@ const PostContent = (props) => {
 				return (
 					<div className={classes.image}>
 						<Image
-							src={`/images/posts/${post.slug}/${image.properties.src}`}
+							src={`/images/posts/${post?.slug}/${image.properties.src}`}
 							alt={image.alt}
 							width={600}
 							height={300}
@@ -41,7 +41,6 @@ const PostContent = (props) => {
 		},
 		code(code) {
 			const { children, className } = code;
-		
 			const language = className?.split('-')[1];
 			return (
 				<SyntaxHighlighter

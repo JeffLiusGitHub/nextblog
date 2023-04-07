@@ -1,5 +1,5 @@
 ---
-title: 'GraphQL: A Beginner’s Guide'
+title: 'GraphQL Guide'
 excerpt: 'Learn the basics of GraphQL and how it can be used to build powerful APIs.'
 image: graphql-thumb.png
 date: '2023-04-06'

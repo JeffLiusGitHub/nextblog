@@ -2,7 +2,6 @@
 title: 'React Testing Library and Jest: A Beginner’s Guide'
 date: '2023-04-05'
 excerpt: 'Learn the basics of testing React components with React Testing Library and Jest.'
-
 image: testing-js-thumb.jpg
 isFeatured: false
 ---

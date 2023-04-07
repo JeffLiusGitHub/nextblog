@@ -2,7 +2,6 @@
 title: 'Understanding Docker and Kubernetes'
 date: '2023-04-05'
 excerpt: 'Learn the basics of containerization and container orchestration using Docker and Kubernetes in simple terms.'
-
 image: docker-kubernetes-thumb.jpg
 isFeatured: true
 ---

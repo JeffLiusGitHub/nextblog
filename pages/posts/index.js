@@ -1,7 +1,7 @@
 import React from 'react';
 import AllPosts from '../../components/posts/all-posts';
 import Head from 'next/head';
-import { getAllPosts } from '../../lib/posts-utils';
+import { getAllPosts } from '../../lib/posts-util';
 
 const AllPostsPage = (props) => {
 	return (

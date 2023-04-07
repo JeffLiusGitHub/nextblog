@@ -1,5 +1,5 @@
 import classes from './notification.module.css';
-import { ReactDOM } from 'react';
+import ReactDOM from 'react-dom';
 function Notification(props) {
 	const { title, message, status } = props;
 
